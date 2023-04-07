@@ -13,6 +13,11 @@ body{
     background-color: var(--brand-color-6-white);
 }
 
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
 .header-logo,
 .footer-logo{
     font-family: 'Raleway', sans-serif;
@@ -26,6 +31,15 @@ body{
     color: var(--brand-color-3-iris);
 }
 
+.header-nav{
+    display: flex;
+}
+
+.header-logo {
+    display: flex;
+    margin-right: 76px;
+}
+
 .header-logo-two{
     color: var(--brand-color-1-navy-blue);
 }
@@ -36,6 +50,7 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--brand-color-1-navy-blue);
+
 }
 
 .header-link:hover,
@@ -53,10 +68,17 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--brand-color-1-navy-blue);
+    display: flex;
+    align-items: center;
+}
+
+.header-list{
+    gap: 30px;
 }
 
 .address{
     font-style: normal;
+    margin-left: auto;
 }
 
 .address-link{
@@ -65,6 +87,11 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--brand-color-2-slate);
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-link:hover,
@@ -77,6 +104,12 @@ body{
 }
 
 .section-one-title{
+    width: 496px;
+    height: 120px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -86,6 +119,10 @@ body{
 }
 
 .section-one-btn{
+    min-width: 169px;
+    min-height: 56px;
+    padding: 16px 32px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -95,6 +132,9 @@ body{
     color: var(--brand-color-6-white);
     background-color: var(--brand-color-3-iris);
     cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .section-one-btn:hover,
@@ -110,12 +150,33 @@ body{
     color: var(--brand-color-1-navy-blue);
 }
 
+.section-two-list {
+    display: flex;
+    gap: 24px;
+}
+
+.section-two-subtitle{
+    margin-top: 120px;
+    margin-bottom: 8px;
+}
+
 .section-two-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--brand-color-2-slate);
+}
+
+.section-three-list{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.section-three-title {
+    margin-top: 120px;
+    margin-bottom: 72px;
 }
 
 .section-three-title,
@@ -129,7 +190,19 @@ body{
     color: var(--brand-color-1-navy-blue);
 }
 
+.section-four-title{
+    margin-bottom: 72px;
+}
+
+.section-four-list{
+    display: flex;
+    gap: 24px;
+}
+
 .section-four-subtitle{
+    margin-top: 32px;
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -139,6 +212,8 @@ body{
 }
 
 .section-four-text{
+    margin-bottom: 32px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -155,7 +230,15 @@ body{
     background-color: var(--brand-color-1-navy-blue);
 }
 
+.footer-logo{
+    margin-top: 101.5px;
+    margin-bottom: 17.5px;
+}
+
 .footer-text{
+    width: 264px;
+    height: 72px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -163,8 +246,14 @@ body{
     color: var(--brand-color-5-cloud);
 }
 
-.list{
-    list-style: none;
+.portfolio-list{
+    display: flex;
+    gap: 24px;
+
+}
+
+.portfolio-img-item{
+    flex-basis: calc((100%-48px)/3);
 }
 
 .portfolio-img-subtitle{
@@ -183,15 +272,17 @@ body{
     color: var(--brand-color-2-slate);
 }
 
-.link{
-    text-decoration: none;
-}
-
 .section-four{
     background-color: var(--brand-color-5-cloud);
 }
 
 .portfolio-btn{
+    width: 116px;
+    height: 48px;
+
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -211,3 +302,35 @@ body{
 .portfolio-img-link{
     text-decoration: none;
 }
+
+.container{
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px
+    
+}
+     
+    
+    
+/* reset start */
+
+h1,h2,h3,h4,h5,h6,p{
+   margin: 0;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+/* reset end */
