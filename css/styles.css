@@ -81,7 +81,6 @@ body{
 }
 
 .header{
-    width: 1158px;
     border-bottom: 1px solid var(--brand-color-7-cornflower);
 }
 
@@ -159,15 +158,12 @@ body{
     padding: 120px 0;
 }
 
-.section-two-title{
-    margin-bottom: 8px;
-}
-
 .section-two-item{
     flex-basis: calc((100%-72px)/4);
 }
 
 .section-two-subtitle{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -199,7 +195,6 @@ body{
 .section-three-list{
     display: flex;
     gap: 24px;
-    margin-bottom: 120px;
 }
 
 .section-three-title {
@@ -231,7 +226,6 @@ body{
 }
 
 .section-four-subtitle{
-    margin-top: 32px;
     margin-bottom: 8px;
 
     font-weight: 500;
@@ -243,8 +237,6 @@ body{
 }
 
 .section-four-text{
-    margin-bottom: 32px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -255,6 +247,11 @@ body{
 
 .section-four-item{
     background-color: var(--brand-color-6-white);
+}
+
+.section-four-container{
+    padding: 32px 16px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .footer{
@@ -278,10 +275,32 @@ body{
     color: var(--brand-color-5-cloud);
 }
 
+.section-portfolio{
+    padding: 96px 120px;
+}
+
 .portfolio-list{
     display: flex;
     gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+}
 
+.portfolio-img-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.item-one{
+    width: calc((100%-48px)/3);
+}
+
+.portfolio-container{
+    padding: 32px 16px;
+    border: 1px solid var(--brand-color-7-cornflower);
+    border-top: none;
 }
 
 .portfolio-img-item{
@@ -289,6 +308,7 @@ body{
 }
 
 .portfolio-img-subtitle{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -309,6 +329,7 @@ body{
 }
 
 .portfolio-btn{
+    padding: 12px 24px;
     width: 116px;
     height: 48px;
 
@@ -327,6 +348,7 @@ body{
 
 .portfolio-btn:hover,
 .portfolio-btn:focus{
+    border: 1px solid transparent;
     color: var(--brand-color-6-white);
     background-color: var(--brand-color-4-ocean);
 }
@@ -336,7 +358,7 @@ body{
 }
 
 .container{
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
