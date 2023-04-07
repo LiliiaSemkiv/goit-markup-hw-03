@@ -34,12 +34,8 @@ body{
 
 .header-nav{
     display: flex;
-    align-items: center;
     gap: 40px;
-}
-
-.header-item{
-    padding: 24px 0;
+    align-items: center;
 }
 
 .header-logo {
@@ -70,6 +66,7 @@ body{
 }
 
 .header-list{
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -84,6 +81,7 @@ body{
 }
 
 .header{
+    width: 1158px;
     border-bottom: 1px solid var(--brand-color-7-cornflower);
 }
 
@@ -161,8 +159,12 @@ body{
     padding: 120px 0;
 }
 
+.section-two-title{
+    margin-bottom: 8px;
+}
+
 .section-two-item{
-    width: calc((100%-72px)/4);
+    flex-basis: calc((100%-72px)/4);
 }
 
 .section-two-subtitle{
@@ -178,6 +180,10 @@ body{
     gap: 24px;
 }
 
+.section-three{
+    padding-bottom: 120px;
+}
+
 .section-two-text{
     font-weight: 400;
     font-size: 16px;
@@ -187,7 +193,7 @@ body{
 }
 
 .section-three-item{
-    width: calc((100%-48px)/3);
+    flex-basis: calc((100%-3*16px)/3);
 }
 
 .section-three-list{
@@ -209,6 +215,10 @@ body{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--brand-color-1-navy-blue);
+}
+
+.section-four{
+    padding: 120px 0;
 }
 
 .section-four-title{
