@@ -47,6 +47,7 @@ body{
 }
 
 .header-link{
+    display: block;
     padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
@@ -65,6 +66,7 @@ body{
 }
 
 .header-list{
+    margin: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -157,7 +159,8 @@ body{
 }
 
 .section-two{
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section-two-item{
@@ -175,6 +178,7 @@ body{
 
 .section-two-list {
     display: flex;
+    margin: 0;
     gap: 24px;
 }
 
@@ -196,6 +200,7 @@ body{
 
 .section-three-list{
     display: flex;
+    margin: 0;
     gap: 24px;
 }
 
@@ -224,6 +229,7 @@ body{
 
 .section-four-list{
     display: flex;
+    margin: 0;
     gap: 24px;
 }
 
@@ -283,6 +289,7 @@ body{
 
 .portfolio-list{
     display: flex;
+    margin: 0;
     gap: 24px;
     justify-content: center;
     margin-bottom: 72px;
